@@ -1,11 +1,6 @@
 import React,{useState} from 'react'
 
 export default function About(props) {
-    
-    // const [mystyle,setmystyle] = useState({
-    //     color:'black',
-    //     backgroundColor:'white'
-    // })
 
     let mystyle = {
         color: props.mode==="dark"?"white":"black",
@@ -77,9 +72,6 @@ export default function About(props) {
                     </div>
                 </div>
             </div>
-            {/* <div className="container my-2">
-                <button type="button" onClick={toggleStyle} className="btn btn-outline-secondary" >{btntext}</button>
-            </div> */}
         </div>
   )
 }

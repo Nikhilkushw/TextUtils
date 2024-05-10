@@ -1,5 +1,5 @@
 import Navbar from "./component/Navbar"
-import TextForm from "./component/TextForm"
+import TextForm from "./component"
 import About from "./component/About"
 import React, { useState } from "react"
 import Alert from "./component/Alert"
@@ -44,7 +44,7 @@ function App() {
   }
   return (
     <>
-    <Navbar title = "TextUtils" About = "About TextUtils" mode = {mode} toggleMode={togglemode}/>
+    <Navbar title = "TextUtils" About = "About" mode = {mode} toggleMode={togglemode}/>
     <Alert alert = {alert}/>
     <div className="container my-3">
     <Routes>

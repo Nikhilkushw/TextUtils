@@ -1,35 +1,28 @@
 import React,{useState} from 'react'
 
-export default function TextForm(props) {
+export default function Home(props) {
 
     const [Text, setText] = useState("");
     
     const HandleUpClick = ()=>{
-        // console.log("Clicked uppercase")
         const newText = Text.toUpperCase()
-        // console.log(newText)
         setText(newText)
         props.showAlert("Converted to upperCase","success")
     }
 
     const HandleLoClick = ()=>{
-        // console.log("Clicked lowercase")
         const newText = Text.toLowerCase()
-        // console.log(newText)
         setText(newText)
         props.showAlert("Converted to lowerCase","success")
     }
 
     const HandleclearClick = ()=>{
-        // console.log("Clear text")
         const newText = ""
-        // console.log(newText)
         setText(newText)
         props.showAlert("Clear text","success")
     }
 
     const HandleOnChange = (event)=>{
-        // console.log("On change")
         setText(event.target.value)
     }
 
