@@ -6,10 +6,8 @@ import {HashRouter, BrowserRouter as Router} from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <Router> */}
-    <HashRouter>
+    <Router>
       <App />
-    </HashRouter>
-    {/* </Router> */}
+    </Router>
   </React.StrictMode>,
 )
